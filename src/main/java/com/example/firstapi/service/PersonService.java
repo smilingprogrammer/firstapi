@@ -2,6 +2,8 @@ package com.example.firstapi.service;
 
 import com.example.firstapi.dao.PersonDao;
 import com.example.firstapi.model.Person;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -9,7 +11,8 @@ public class PersonService {
 
     private final PersonDao personDao;
 
-    public PersonService(PersonDao personDao) {
+    @Autowired
+    public PersonService(@Qualifier("fakeDao") PersonDao personDao) {
         this.personDao = personDao;
     }
 
