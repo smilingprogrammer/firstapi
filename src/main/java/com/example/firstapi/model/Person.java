@@ -7,7 +7,7 @@ public class Person {
 
     private final UUID id;
 
-    @NotBlank
+    /*@NotBlank*/
     private final String name;
 
     public Person(@JsonProperty("id") UUID id,
