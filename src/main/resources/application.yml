@@ -1,6 +1,6 @@
 app:
     datasource:
-        jdbc-url: jdbc:postgresql://localhost:5432/firstapi
+        jdbc-url: jdbc:postgresql://localhost:5432/firstdb
         username: postgres
         password: abdulsobur
         pool-size: 30
