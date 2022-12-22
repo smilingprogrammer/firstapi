@@ -33,7 +33,7 @@ public class PersonDataAccessService implements PersonDao{
 
     @Override
     public Optional<Person> selectPersonById(UUID id) {
-        final String sql = "SELECT id,name FROM person";
+        final String sql = "SELECT id,name FROM person WHERE id = ?";
 
         Person person = jdbcTemplate.queryForObject(sql,
                 new Object[]{id},
