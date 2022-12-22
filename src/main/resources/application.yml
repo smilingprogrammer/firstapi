@@ -2,5 +2,5 @@ app:
     datasource:
         jdbc-url: jdbc:postgresql://localhost:5432/firstdb
         username: postgres
-        password: abdulsobur
+        password: password
         pool-size: 30
